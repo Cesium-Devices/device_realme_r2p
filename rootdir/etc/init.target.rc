@@ -141,6 +141,10 @@ on boot
     chown system system /persist/speccfg/submask
     chown system system /persist/speccfg/partition
 
+    # Touchpanel
+    chown system system /proc/touchpanel/double_tap_enable
+    chmod 0664 /proc/touchpanel/double_tap_enable
+
     #Create folder dump yuv images while debugging
     mkdir /data/vendor/camera 0770 camera camera
 
@@ -152,8 +156,6 @@ on boot
     setprop vendor.usb.qdss.inst.name "qdss"
     write /sys/module/usb_f_qcrndis/parameters/rndis_dl_max_xfer_size 15916
     setprop sys.usb.configfs 1
-
-    chmod 0664 /proc/touchpanel/double_tap_enable
 
 #Peripheral manager
 service vendor.per_mgr /vendor/bin/pm-service
