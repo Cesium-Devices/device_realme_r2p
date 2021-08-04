@@ -252,6 +252,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fix_baseband.sh \
     fstab.qcom \
     init.msm.usb.configfs.rc \
     init.oppo.rc \
