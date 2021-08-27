@@ -29,6 +29,9 @@
 # Hypnus
 /vendor/bin/hw/vendor\.oppo\.hardware\.hypnus@1\.0-service                                              u:object_r:hal_hypnus_default_exec:s0
 
+# I/O
+/sys/devices(/platform)?/soc/[a-f0-9]+.sdhci/mmc_host/mmc[0-9]/mmc[0-9]:[a-f0-9]+/block/mmcblk[0-9]/queue/read_ahead_kb     u:object_r:sysfs_mmc_host:s0
+
 # Light
 /vendor/bin/hw/android\.hardware\.light@2\.0-service\.realme_sdm660                                     u:object_r:hal_light_sdm660_exec:s0
 /sys/devices(/platform)?/soc/[0-9a-f]+.qcom,spmi/spmi-[0-9]+/spmi[0-9]+-[0-9]+/[0-9a-z]+.qcom,spmi:qcom,pm660l@[0-9]+:qcom,leds@[a-z0-9]+/leds/button-backlight(/.*)?  u:object_r:sysfs_leds:s0
