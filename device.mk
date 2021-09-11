@@ -436,11 +436,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wifi/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/wifi/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
 
-# WiFi Display
-PRODUCT_PACKAGES += \
-    libaacwrapper \
-    libnl
-
 # Qcom
 PRODUCT_USES_QCOM_HARDWARE := true
 PRODUCT_BOARD_PLATFORM := sdm660
@@ -448,7 +443,3 @@ PRODUCT_BOARD_PLATFORM := sdm660
 # Signapk
 PRODUCT_HOST_PACKAGES += \
     signapk
-
-# WFD
-PRODUCT_BOOT_JARS += \
-    WfdCommon
