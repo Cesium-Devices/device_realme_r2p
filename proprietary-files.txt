@@ -2924,8 +2924,8 @@ vendor/etc/init/init.qdmastats.rc
 vendor/etc/init/port-bridge.rc
 vendor/etc/init/qcrild.rc
 
-# Init - modified
-vendor/etc/init/netmgrd.rc
+# Init - from RMX1801EX_11.F.12 - modified
+vendor/etc/init/netmgrd.rc|213d147cfcfe175aa4cdf1a345f3b148ea72982d
 
 # Keybox
 vendor/bin/hw/vendor.oppo.hardware.cryptoeng@1.0-service
