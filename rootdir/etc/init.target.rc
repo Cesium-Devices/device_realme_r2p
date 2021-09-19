@@ -165,6 +165,9 @@ service vendor.per_proxy /vendor/bin/pm-proxy
     disabled
 
 on property:sys.boot_completed=1
+    # Enable EAS
+    write /proc/sys/kernel/sched_energy_aware 1
+
     # Runtime fs tuning
     write /sys/block/sda/queue/nr_requests 128
     write /sys/block/sde/queue/nr_requests 128
