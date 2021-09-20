@@ -32,6 +32,49 @@ vendor.audio_hal.period_size=240
 vendor.video.disable.ubwc=1
 vendor.voice.path.for.pcm.voip=true
 
+# Audio-feature
+vendor.audio.feature.afe_proxy.enable=true
+vendor.audio.feature.anc_headset.enable=true
+vendor.audio.feature.audiozoom.enable=false
+vendor.audio.feature.battery_listener.enable=false
+vendor.audio.feature.compr_cap.enable=false
+vendor.audio.feature.compr_voip.enable=true
+vendor.audio.feature.compress_in.enable=false
+vendor.audio.feature.compress_meta_data.enable=true
+vendor.audio.feature.concurrent_capture.enable=false
+vendor.audio.feature.custom_stereo.enable=true
+vendor.audio.feature.deepbuffer_as_primary.enable=false
+vendor.audio.feature.display_port.enable=true
+vendor.audio.feature.dsm_feedback.enable=false
+vendor.audio.feature.dynamic_ecns.enable=false
+vendor.audio.feature.ext_hw_plugin.enable=false
+vendor.audio.feature.external_dsp.enable=false
+vendor.audio.feature.external_speaker.enable=false
+vendor.audio.feature.external_speaker_tfa.enable=false
+vendor.audio.feature.fluence.enable=true
+vendor.audio.feature.fm.enable=true
+vendor.audio.feature.hdmi_edid.enable=true
+vendor.audio.feature.hdmi_passthrough.enable=true
+vendor.audio.feature.hfp.enable=true
+vendor.audio.feature.hifi_audio.enable=true
+vendor.audio.feature.hwdep_cal.enable=false
+vendor.audio.feature.incall_music.enable=false
+vendor.audio.feature.keep_alive.enable=false
+vendor.audio.feature.kpi_optimize.enable=false
+vendor.audio.feature.maxx_audio.enable=false
+vendor.audio.feature.multi_voice_session.enable=true
+vendor.audio.feature.ras.enable=true
+vendor.audio.feature.record_play_concurency.enable=false
+vendor.audio.feature.snd_mon.enable=true
+vendor.audio.feature.spkr_prot.enable=true
+vendor.audio.feature.src_trkn.enable=true
+vendor.audio.feature.ssrec.enable=true
+vendor.audio.feature.usb_offload.enable=true
+vendor.audio.feature.usb_offload_burst_mode.enable=false
+vendor.audio.feature.usb_offload_sidetone_volume.enable=false
+vendor.audio.feature.vbat.enable=true
+vendor.audio.feature.wsa.enable=false
+
 # Bluetooth
 persist.vendor.bt.aac_frm_ctl.enabled=true
 vendor.qcom.bluetooth.soc=cherokee
@@ -125,15 +168,6 @@ debug.sf.early_gl_app_phase_offset_ns=1500000
 debug.sf.enable_hwc_vds=1
 vendor.display.qdcm.mode_combine=1
 
-# Time-Service
-persist.vendor.delta_time.enable=true
-
-# Zygote preforking
-persist.device_config.runtime_native.usap_pool_enabled=true
-
-# Copy to default prop
-ro.surface_flinger.protected_contents=true
-
 # Sensors
 ro.vendor.sensors.facing=false
 ro.vendor.sensors.cmc=false
@@ -143,12 +177,19 @@ ro.vendor.sdk.sensors.gestures=false
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.max_virtual_display_dimension=4096
+ro.surface_flinger.protected_contents=true
 ro.surface_flinger.vsync_event_phase_offset_ns=2000000
 ro.surface_flinger.vsync_sf_event_phase_offset_ns=6000000
 ro.surface_flinger.has_wide_color_display=1
 ro.surface_flinger.use_color_management=1
 
+# Time-Service
+persist.vendor.delta_time.enable=true
+
 # Zram-writeback
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=180
 ro.zram.periodic_wb_delay_hours=24
+
+# Zygote preforking
+persist.device_config.runtime_native.usap_pool_enabled=true
