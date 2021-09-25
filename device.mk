@@ -151,9 +151,6 @@ PRODUCT_PACKAGES += \
     libbthost_if \
     vendor.qti.hardware.btconfigstore@1.0.vendor
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
-
 # Camera
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
@@ -168,6 +165,10 @@ PRODUCT_PACKAGES += \
 # Charger
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.charger.enable_suspend=true
+
+# Component overrides
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
 # Configstore
 PRODUCT_PACKAGES += \
