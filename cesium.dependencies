@@ -1,9 +1,9 @@
 [
     {
-      "repository" : "baibhab34/RMX1801",
+      "repository" : "PixelExperience-Devices/kernel_realme_sdm660",
       "target_path": "kernel/realme/sdm660",
       "remote"     : "github",
-      "branch"     : "eas3"
+      "branch"     : "eleven"
     },
     {
       "repository" : "ad1tyas1ngh/vendor_realme_r2p",
