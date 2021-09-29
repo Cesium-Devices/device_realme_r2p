@@ -48,7 +48,6 @@ public final class DozeUtils {
     protected static final String GESTURE_PICK_UP_KEY = "gesture_pick_up";
     protected static final String GESTURE_HAND_WAVE_KEY = "gesture_hand_wave";
     protected static final String GESTURE_POCKET_KEY = "gesture_pocket";
-    protected static final String GESTURE_SMART_WAKE_KEY = "gesture_smart_wake";
 
     public static void startService(Context context) {
         if (DEBUG) Log.d(TAG, "Starting service");
@@ -140,10 +139,6 @@ public final class DozeUtils {
 
     protected static boolean isPocketGestureEnabled(Context context) {
         return isGestureEnabled(context, GESTURE_POCKET_KEY);
-    }
-
-    protected static boolean isSmartWakeEnabled(Context context) {
-        return isGestureEnabled(context, GESTURE_SMART_WAKE_KEY);
     }
 
     public static boolean sensorsEnabled(Context context) {
